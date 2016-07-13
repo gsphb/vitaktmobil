@@ -1,18 +1,35 @@
 'use strict';
 
+
 (function() {
     var app = {
-        data: {}
+        data: {},
     };
 
-    var bootstrap = function() {
+    var bootstrap = function() {        
+
         $(function() {
+            var initialView = '';
+            if(!app.state.isSupported) {
+                initialView = 'components/warning/view.html'
+            }
+            else 
+            {
+                if (app.state.isActivated) {
+                    console.log("activated")
+            	    initialView = 'components/notruf/view.html'
+                }
+                else {
+                	initialView = 'components/activation/view.html'
+                }                
+            }
+            
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 transition: 'slide',
                 skin: 'nova',
-                initial: 'components/homeView/view.html'
-            });
-        });
+                initial: initialView
+            });            
+        });        
     };
 
     if (window.cordova) {

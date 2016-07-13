@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.2.607/styles/kendo.common-office365.min.css" />
+        <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.2.607/styles/kendo.default.min.css" />
+        <link rel="stylesheet" href="//kendo.cdn.telerik.com/2016.2.607/styles/kendo.mobile.all.min.css" />
+      
+        <script src="cordova.js"></script>
+        <script src="kendo/js/jquery.min.js"></script>
+        <script src="kendo/js/kendo.mobile.min.js"></script>
+        
+        <script src="app.js"></script>
+        
+        <script src="utils/appState.js"></script>   
+        
+        <script src="components/warning/index.js"></script>        
+        <script src="components/notruf/index.js"></script>
+        <script src="components/location/index.js"></script>
+        <script src="components/activation/index.js"></script>      
+    </head>
+
+    <body id="kendoUiMobileApp">   
+        <div data-role="drawer" id="menu-drawer" style="width: 15em" data-swipe-to-open-views="[]" data-use-native-scrolling="true">
+            <ul data-role="listview" class="km-listview-icons">
+                <li data-icon="phone"><a href="components/notruf/view.html" data-transition="none">Notruf</a></li>
+                <li data-icon="search"><a href="components/location/view.html" data-transition="none">Standort</a></li>
+            </ul>    
+        </div>
+
+        <div data-role="drawer" data-position="right" id="settings-drawer" style="width: 15em" data-swipe-to-open-views="[]" data-use-native-scrolling="true">
+            <ul data-role="listview" class="km-listview-icons" data-align="top">
+                 <input  type="checkbox" data-role="switch" data-checked="false" />
+            </ul>          
+        </div>
+         
+        <div data-role="layout" data-id="menu-drawer-layout" data-show="showDemoLayout">
+            <header data-role="header">
+                <div data-role="navbar">
+                    <a data-role="button" data-rel="drawer" href="#menu-drawer" data-icon="drawer-icon" data-align="left"></a>
+                    <span data-role="view-title"></span>
+                    <a data-align="right" data-icon="settings" data-rel="drawer" href="#settings-drawer" data-role="button" title="Show this demo source code"></a>
+                </div>
+            </header>
+        </div>    
+    </body>
+</html>

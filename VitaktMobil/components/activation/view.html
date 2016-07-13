@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+        <link href="../../kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+        <link href="../../styles/main.css" rel="stylesheet" />
+     
+        <script src="../../cordova.js"></script>
+        <script src="../../kendo/js/jquery.min.js"></script>
+        <script src="../../kendo/js/kendo.mobile.min.js"></script>       
+    </head>
+    
+    <body>
+        <div id="activation" data-role="view" data-title="Aktivierung" data-use-native-scrolling="true" data-model="app.activation">       
+              <div align="center" style="margin-top: 20px">
+                <span style="font-size: large;">
+                        Bitte geben Sie Callnummer und Code (9 Stellen) ein
+                        und tippen Sie dann auf "Freischalten".
+                    </span>
+                <br/><br/>
+                <label for="callnr">Code:</label>
+                <input id="callnr" type="text" data-bind="value: callnummer" size="12" maxlength="9" required pattern="\d{9}" validationmessage="***"/>
+                <br/><br/>
+                <button data-role="button" data-bind="events: { click: onActivateClick }">Freischalten</button>
+                <button data-role="button" data-bind="events: { click: onCallVitaktClick }">Vitakt anrufen</button>
+                <br/><br/>
+                <a href="">+49 (0)5971-934-310</a>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
+

@@ -1,11 +1,11 @@
 {
-  "ProjectName": "Test",
+  "ProjectName": "VitaktMobil",
   "ProjectGuid": "b04fa3fa-1808-4388-865f-d66874b9ce6a",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.Test",
-  "DisplayName": "Test",
+  "AppIdentifier": "com.telerik.VitaktMobil",
+  "DisplayName": "VitaktMobil",
   "Author": "",
-  "Description": "Test",
+  "Description": "VitaktMobil",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -35,11 +35,12 @@
   "WP8PublisherID": "{eacdb583-3cea-4cbb-8aae-6068efb337c7}",
   "WP8ProductID": "{806931d8-e1de-44e2-b91c-44c241b8be15}",
   "WPSdk": "8.0",
-  "WP8PackageIdentityName": "1234Telerik.Test",
+  "WP8PackageIdentityName": "1234Telerik.VitaktMobil",
   "WP8WindowsPublisherName": "CN=Telerik",
   "WP8SupportedResolutions": [
     "ID_RESOLUTION_WVGA",
     "ID_RESOLUTION_WXGA",
     "ID_RESOLUTION_HD720P"
-  ]
+  ],
+  "iOSDeploymentTarget": "6.0"
 }
