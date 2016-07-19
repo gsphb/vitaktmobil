@@ -1,5 +1,6 @@
 'use strict';
 
+var DEBUGMODE = 1;
 
 (function() {
     var app = {
@@ -15,14 +16,18 @@
             }
             else 
             {
-                if (app.state.isActivated) {
-                    console.log("activated")
+                if (app.state.isActivated) 
+                {
             	    initialView = 'components/notruf/view.html'
                 }
-                else {
+                else 
+                {
                 	initialView = 'components/activation/view.html'
                 }                
             }
+            
+            if(DEBUGMODE)
+             initialView = 'components/activation/view.html'
             
             app.mobileApp = new kendo.mobile.Application(document.body, {
                 transition: 'slide',

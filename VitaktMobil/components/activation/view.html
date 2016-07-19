@@ -8,7 +8,8 @@
      
         <script src="../../cordova.js"></script>
         <script src="../../kendo/js/jquery.min.js"></script>
-        <script src="../../kendo/js/kendo.mobile.min.js"></script>       
+        <script src="../../kendo/js/kendo.mobile.min.js"></script>    
+           
     </head>
     
     <body>
@@ -20,7 +21,7 @@
                     </span>
                 <br/><br/>
                 <label for="callnr">Code:</label>
-                <input id="callnr" type="text" data-bind="value: callnummer" size="12" maxlength="9" required pattern="\d{9}" validationmessage="***"/>
+                <input id="callnr" type="text" data-bind="value: callnumber" size="12" maxlength="9" required pattern="\d{9}" validationmessage="***"/>
                 <br/><br/>
                 <button data-role="button" data-bind="events: { click: onActivateClick }">Freischalten</button>
                 <button data-role="button" data-bind="events: { click: onCallVitaktClick }">Vitakt anrufen</button>

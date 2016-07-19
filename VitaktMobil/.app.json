@@ -3,7 +3,7 @@
   "views": [
     {
       "type": "kendo-ui-mobile:view",
-      "name": "homeView",
+      "name": "acitvationView",
       "components": [],
       "title": "Home View",
       "addToNavigation": true,
